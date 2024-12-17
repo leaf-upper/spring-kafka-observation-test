@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers:
+    listener:
+      observation-enabled: true
+    template:
+      observation-enabled: true
+
+logging:
+  pattern:
+    correlation: "[%32X{traceId:-}-%16X{spanId:-}] "
